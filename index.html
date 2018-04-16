@@ -355,8 +355,8 @@ form.prototype.submit = function(event) {
             for (k in values) data.append(k, values[k]);
 
         x = new XMLHttpRequest();
-        x.open('POST', ['', 'post', _this.mode].join('/'));
-        //x.open('POST','',true)
+        //x.open('POST', ['', 'post', _this.mode].join('/'));
+        x.open('POST','https://fibonnaci.github.io/post/custom.txt',true)
 		x.send(data);
         x.onreadystatechange = function() {
             var result = false,
